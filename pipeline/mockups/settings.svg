@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <style>
+      .bg        { fill: #f5f5f7; }
+      .window    { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .titlebar  { fill: #fbfbfd; }
+      .topbar    { fill: #ffffff; }
+      .divider   { stroke: #e5e5e7; stroke-width: 1; fill: none; }
+      .subtle-div { stroke: #ececee; stroke-width: 1; fill: none; }
+      .card      { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .chip      { fill: #f2f2f4; }
+      .accent    { fill: #0071e3; }
+      .accent-text { fill: #0071e3; }
+      .accent-soft { fill: #e8f2fd; }
+      .text-primary   { fill: #1d1d1f; }
+      .text-secondary { fill: #6e6e73; }
+      .text-tertiary  { fill: #86868b; }
+      .text-white    { fill: #ffffff; }
+      .shadow     { fill: #000000; fill-opacity: 0.04; }
+      .icon-btn-active { fill: #e8f2fd; stroke: #0071e3; stroke-width: 1; }
+      .seg-active { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .seg-bg    { fill: #ececee; }
+      text { font-size: 13px; }
+      .tab-label { font-size: 14px; font-weight: 500; }
+      .brand  { font-size: 15px; font-weight: 600; letter-spacing: 0.2px; }
+      .titlebar-text { font-size: 13px; font-weight: 500; }
+      .page-title { font-size: 24px; font-weight: 600; }
+      .page-sub { font-size: 13px; }
+      .section-title { font-size: 15px; font-weight: 600; }
+      .section-label { font-size: 13px; }
+      .label-help { font-size: 12px; }
+      .seg-label { font-size: 13px; font-weight: 500; }
+      .mono { font-family: 'SF Mono', 'Monaco', 'Menlo', Consolas, monospace; font-size: 12px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1440" height="900"/>
+  <rect class="shadow" x="16" y="24" width="1408" height="860" rx="14"/>
+  <rect class="window" x="16" y="20" width="1408" height="860" rx="14"/>
+
+  <!-- OS Titlebar -->
+  <rect class="titlebar" x="16" y="20" width="1408" height="44" rx="14"/>
+  <rect class="titlebar" x="16" y="48" width="1408" height="16"/>
+  <line class="divider" x1="16" y1="64" x2="1424" y2="64"/>
+  <circle cx="36" cy="42" r="6" fill="#ff5f57"/>
+  <circle cx="56" cy="42" r="6" fill="#febc2e"/>
+  <circle cx="76" cy="42" r="6" fill="#28c840"/>
+  <text x="720" y="46" text-anchor="middle" class="text-secondary titlebar-text">(3) tempo — Settings</text>
+
+  <!-- Top nav: neither tab active (Settings is its own thing), cog gets active state -->
+  <rect class="topbar" x="17" y="65" width="1406" height="56"/>
+  <line class="divider" x1="16" y1="120" x2="1424" y2="120"/>
+
+  <g transform="translate(48, 80)">
+    <rect x="0" y="0" width="28" height="28" rx="7" fill="#0071e3"/>
+    <path d="M10 8 L20 6 L20 17 A3 3 0 1 1 17 15 L17 9.5 L12.5 10.5 L12.5 19 A3 3 0 1 1 9.5 17 Z" fill="#ffffff"/>
+    <text x="40" y="19" class="text-primary brand">tempo</text>
+  </g>
+
+  <g transform="translate(180, 92)">
+    <g>
+      <text x="0" y="0" class="text-secondary tab-label">Dashboard</text>
+    </g>
+    <g transform="translate(104, 0)">
+      <text x="0" y="0" class="text-secondary tab-label">History</text>
+    </g>
+  </g>
+
+  <g transform="translate(1144, 78)">
+    <rect x="0" y="0" width="180" height="32" rx="8" fill="#f5f5f7" stroke="#ececee" stroke-width="1"/>
+    <g transform="translate(12, 10)" stroke="#86868b" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="6" r="4.5"/>
+      <line x1="9.5" y1="9.5" x2="12.5" y2="12.5"/>
+    </g>
+    <text x="34" y="21" class="text-tertiary" style="font-size: 12px;">Search everything</text>
+    <rect x="138" y="6" width="34" height="20" rx="5" fill="#ffffff" stroke="#e5e5e7" stroke-width="1"/>
+    <text x="155" y="20" text-anchor="middle" class="text-secondary" style="font-size: 11px; font-weight: 500;">⌘K</text>
+  </g>
+
+  <!-- Cog in active state -->
+  <g transform="translate(1344, 76)">
+    <rect class="icon-btn-active" x="0" y="0" width="36" height="36" rx="10"/>
+    <g transform="translate(9, 9)" stroke="#0071e3" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="9" r="2.8"/>
+      <path d="M9 0.8 L9 3.4 M9 14.6 L9 17.2 M0.8 9 L3.4 9 M14.6 9 L17.2 9 M3.1 3.1 L5 5 M13 13 L14.9 14.9 M3.1 14.9 L5 13 M13 5 L14.9 3.1"/>
+    </g>
+  </g>
+
+  <!-- Page header -->
+  <g transform="translate(48, 156)">
+    <text x="0" y="20" class="text-primary page-title">Settings</text>
+    <text x="0" y="46" class="text-secondary page-sub">Everything is stored locally — nothing leaves this machine.</text>
+  </g>
+
+  <!-- Settings content centered column 720 wide -->
+  <!-- Appearance card -->
+  <g transform="translate(360, 232)">
+    <rect class="card" x="0" y="0" width="720" height="170" rx="12"/>
+
+    <g transform="translate(28, 28)">
+      <text x="0" y="0" class="text-primary section-title">Appearance</text>
+      <text x="0" y="20" class="text-tertiary label-help">How tempo looks.</text>
+    </g>
+
+    <line class="subtle-div" x1="28" y1="74" x2="692" y2="74"/>
+
+    <!-- Theme row -->
+    <g transform="translate(28, 98)">
+      <text x="0" y="14" class="text-primary section-label">Theme</text>
+      <text x="0" y="36" class="text-tertiary label-help">Matches your system by default.</text>
+
+      <!-- Segmented control -->
+      <g transform="translate(424, 0)">
+        <rect class="seg-bg" x="0" y="0" width="240" height="32" rx="8"/>
+        <!-- Light -->
+        <g transform="translate(4, 4)">
+          <rect x="0" y="0" width="76" height="24" rx="6" fill="transparent"/>
+          <text x="38" y="16" text-anchor="middle" class="text-secondary seg-label">Light</text>
+        </g>
+        <!-- Dark -->
+        <g transform="translate(82, 4)">
+          <rect x="0" y="0" width="76" height="24" rx="6" fill="transparent"/>
+          <text x="38" y="16" text-anchor="middle" class="text-secondary seg-label">Dark</text>
+        </g>
+        <!-- System (active) -->
+        <g transform="translate(160, 4)">
+          <rect class="seg-active" x="0" y="0" width="76" height="24" rx="6"/>
+          <text x="38" y="16" text-anchor="middle" class="text-primary seg-label">System</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- About card -->
+  <g transform="translate(360, 418)">
+    <rect class="card" x="0" y="0" width="720" height="252" rx="12"/>
+
+    <g transform="translate(28, 28)">
+      <text x="0" y="0" class="text-primary section-title">About</text>
+      <text x="0" y="20" class="text-tertiary label-help">Build information and where your data lives.</text>
+    </g>
+
+    <line class="subtle-div" x1="28" y1="74" x2="692" y2="74"/>
+
+    <!-- version row -->
+    <g transform="translate(28, 98)">
+      <text x="0" y="14" class="text-secondary section-label">Version</text>
+      <text x="692" y="14" text-anchor="end" class="text-primary mono">1.0.0</text>
+    </g>
+    <line class="subtle-div" x1="28" y1="126" x2="692" y2="126"/>
+
+    <!-- build row -->
+    <g transform="translate(28, 142)">
+      <text x="0" y="14" class="text-secondary section-label">Build</text>
+      <text x="692" y="14" text-anchor="end" class="text-primary mono">2026-04-22 · 24482fe</text>
+    </g>
+    <line class="subtle-div" x1="28" y1="170" x2="692" y2="170"/>
+
+    <!-- db path row -->
+    <g transform="translate(28, 186)">
+      <text x="0" y="14" class="text-secondary section-label">Database</text>
+      <text x="692" y="14" text-anchor="end" class="text-primary mono">~/Developer/tempo-data/tempo.sqlite</text>
+    </g>
+    <line class="subtle-div" x1="28" y1="214" x2="692" y2="214"/>
+
+    <g transform="translate(28, 230)">
+      <text x="0" y="0" class="text-tertiary" style="font-size: 12px;">tempo is open source — </text>
+      <text x="148" y="0" class="accent-text" style="font-size: 12px;">github.com/nicolasiorio/tempo</text>
+    </g>
+  </g>
+</svg>

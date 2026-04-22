@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <style>
+      .bg        { fill: #f5f5f7; }
+      .window-dim { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; opacity: 0.55; }
+      .backdrop  { fill: #000000; fill-opacity: 0.18; }
+      .palette-card { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .palette-shadow { fill: #000000; fill-opacity: 0.14; }
+      .input-border { fill: #ffffff; stroke: #0071e3; stroke-width: 1.5; }
+      .row-hover { fill: #f0f6fd; }
+      .section-bg { fill: #fafafa; }
+      .divider   { stroke: #e5e5e7; stroke-width: 1; fill: none; }
+      .subtle-div { stroke: #ececee; stroke-width: 1; fill: none; }
+      .accent    { fill: #0071e3; }
+      .accent-text { fill: #0071e3; }
+      .text-primary   { fill: #1d1d1f; }
+      .text-secondary { fill: #6e6e73; }
+      .text-tertiary  { fill: #86868b; }
+      .chip      { fill: #f2f2f4; }
+      .chip-accent { fill: #e8f2fd; }
+      .age-label { fill: #fef4e6; }
+      .age-label-text { fill: #b26900; }
+      text { font-size: 13px; }
+      .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.6px; fill: #86868b; }
+      .result-title { font-size: 14px; font-weight: 500; }
+      .result-sub   { font-size: 12px; }
+      .kbd { font-size: 11px; font-weight: 500; fill: #6e6e73; }
+      .footer-text { font-size: 11px; fill: #86868b; }
+      .create-title { font-size: 14px; font-weight: 500; fill: #0071e3; }
+    </style>
+  </defs>
+
+  <!-- dashboard behind, dimmed -->
+  <rect class="bg" width="1440" height="900"/>
+  <g opacity="0.35">
+    <rect class="window-dim" x="16" y="20" width="1408" height="860" rx="14"/>
+    <!-- faint suggestion of the dashboard — just the cards silhouettes -->
+    <rect x="48" y="216" width="670" height="388" rx="12" fill="#ffffff" stroke="#e5e5e7" opacity="0.6"/>
+    <rect x="738" y="216" width="654" height="388" rx="12" fill="#ffffff" stroke="#e5e5e7" opacity="0.6"/>
+    <rect x="48" y="624" width="1344" height="240" rx="12" fill="#ffffff" stroke="#e5e5e7" opacity="0.6"/>
+  </g>
+
+  <!-- backdrop -->
+  <rect class="backdrop" width="1440" height="900"/>
+
+  <!-- Palette card: 680x520, centered (x=380, y=150) -->
+  <rect class="palette-shadow" x="378" y="158" width="684" height="524" rx="16"/>
+  <rect class="palette-card" x="380" y="150" width="680" height="520" rx="16"/>
+
+  <!-- Search input (top) -->
+  <g transform="translate(400, 170)">
+    <rect class="input-border" x="0" y="0" width="640" height="48" rx="10"/>
+    <!-- magnifier -->
+    <g transform="translate(16, 16)" stroke="#0071e3" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="8" cy="8" r="6"/>
+      <line x1="12.5" y1="12.5" x2="16.5" y2="16.5"/>
+    </g>
+    <text x="48" y="31" class="text-primary" style="font-size: 15px;">ret</text>
+    <!-- caret -->
+    <line x1="66" y1="16" x2="66" y2="36" stroke="#0071e3" stroke-width="1.5"/>
+    <!-- esc hint -->
+    <rect x="588" y="14" width="38" height="20" rx="5" fill="#f2f2f4"/>
+    <text x="607" y="28" text-anchor="middle" class="text-secondary" style="font-size: 11px; font-weight: 500;">esc</text>
+  </g>
+
+  <line class="divider" x1="380" y1="238" x2="1060" y2="238"/>
+
+  <!-- CREATE section -->
+  <g transform="translate(400, 252)">
+    <text x="0" y="0" class="section-label">CREATE</text>
+  </g>
+
+  <!-- Create row 1 (selected highlight) -->
+  <rect class="row-hover" x="380" y="260" width="680" height="46"/>
+  <g transform="translate(400, 272)">
+    <g transform="translate(0, 4)" stroke="#0071e3" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="0" y1="7" x2="14" y2="7"/>
+      <line x1="7" y1="0" x2="7" y2="14"/>
+    </g>
+    <text x="28" y="13" class="create-title">Create daily task</text>
+    <text x="152" y="13" class="text-primary result-title">“ret”</text>
+    <!-- right side: ↵ hint -->
+    <g transform="translate(606, 2)">
+      <rect x="0" y="0" width="30" height="20" rx="5" fill="#ffffff" stroke="#e5e5e7"/>
+      <text x="15" y="14" text-anchor="middle" class="kbd">↵</text>
+    </g>
+  </g>
+
+  <!-- Create row 2 -->
+  <g transform="translate(400, 318)">
+    <g transform="translate(0, 4)" stroke="#6e6e73" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="0" y1="7" x2="14" y2="7"/>
+      <line x1="7" y1="0" x2="7" y2="14"/>
+    </g>
+    <text x="28" y="13" class="text-secondary result-title">Create working item</text>
+    <text x="166" y="13" class="text-primary result-title">“ret”</text>
+  </g>
+
+  <!-- Create row 3 -->
+  <g transform="translate(400, 356)">
+    <g transform="translate(0, 4)" stroke="#6e6e73" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="0" y1="7" x2="14" y2="7"/>
+      <line x1="7" y1="0" x2="7" y2="14"/>
+    </g>
+    <text x="28" y="13" class="text-secondary result-title">Create note titled</text>
+    <text x="152" y="13" class="text-primary result-title">“ret”</text>
+  </g>
+
+  <line class="subtle-div" x1="400" y1="386" x2="1040" y2="386"/>
+
+  <!-- DAILY TASKS section -->
+  <g transform="translate(400, 406)">
+    <text x="0" y="0" class="section-label">DAILY TASKS · 1</text>
+  </g>
+
+  <g transform="translate(400, 428)">
+    <!-- tag icon -->
+    <g transform="translate(0, 4)" stroke="#6e6e73" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="14" height="14" rx="3"/>
+      <line x1="3" y1="6" x2="10" y2="6"/>
+      <line x1="3" y1="9" x2="8" y2="9"/>
+    </g>
+    <text x="28" y="13" class="text-primary result-title">Team <tspan fill="#0071e3" style="font-weight: 600;">ret</tspan>ro prep</text>
+    <text x="28" y="30" class="text-secondary result-sub">Daily · weekdays · 30m</text>
+    <!-- age chip -->
+    <g transform="translate(580, 2)">
+      <rect class="age-label" x="0" y="0" width="50" height="18" rx="9"/>
+      <text x="25" y="13" text-anchor="middle" class="age-label-text" style="font-size: 11px; font-weight: 500;">2d old</text>
+    </g>
+  </g>
+
+  <line class="subtle-div" x1="400" y1="476" x2="1040" y2="476"/>
+
+  <!-- NOTES section -->
+  <g transform="translate(400, 496)">
+    <text x="0" y="0" class="section-label">NOTES · 1</text>
+  </g>
+
+  <g transform="translate(400, 518)">
+    <g transform="translate(0, 4)" stroke="#6e6e73" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0 L14 0 L14 14 L0 14 Z"/>
+      <line x1="3" y1="4" x2="11" y2="4"/>
+      <line x1="3" y1="7" x2="9" y2="7"/>
+      <line x1="3" y1="10" x2="10" y2="10"/>
+    </g>
+    <text x="28" y="13" class="text-primary result-title"><tspan fill="#0071e3" style="font-weight: 600;">Ret</tspan>ro facilitation ideas</text>
+    <text x="28" y="30" class="text-secondary result-sub">Note · standalone · updated 3 days ago</text>
+  </g>
+
+  <line class="subtle-div" x1="400" y1="568" x2="1040" y2="568"/>
+
+  <!-- HISTORY section -->
+  <g transform="translate(400, 588)">
+    <text x="0" y="0" class="section-label">HISTORY · 2</text>
+  </g>
+
+  <g transform="translate(400, 610)">
+    <!-- history clock icon -->
+    <g transform="translate(0, 4)" stroke="#6e6e73" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7" r="6"/>
+      <path d="M7 4 L7 7 L10 8.5"/>
+    </g>
+    <text x="28" y="13" class="text-primary result-title">Team <tspan fill="#0071e3" style="font-weight: 600;">ret</tspan>ro prep · completed</text>
+    <text x="28" y="30" class="text-secondary result-sub">Friday 17 April 2026</text>
+  </g>
+
+  <!-- footer -->
+  <rect x="380" y="642" width="680" height="28" rx="0" fill="#fafafa"/>
+  <line class="subtle-div" x1="380" y1="642" x2="1060" y2="642"/>
+  <g transform="translate(400, 660)">
+    <rect x="0" y="-12" width="18" height="18" rx="4" fill="#ffffff" stroke="#e5e5e7"/>
+    <text x="9" y="2" text-anchor="middle" class="kbd">↑</text>
+    <rect x="22" y="-12" width="18" height="18" rx="4" fill="#ffffff" stroke="#e5e5e7"/>
+    <text x="31" y="2" text-anchor="middle" class="kbd">↓</text>
+    <text x="46" y="2" class="footer-text">navigate</text>
+    <rect x="110" y="-12" width="18" height="18" rx="4" fill="#ffffff" stroke="#e5e5e7"/>
+    <text x="119" y="2" text-anchor="middle" class="kbd">↵</text>
+    <text x="134" y="2" class="footer-text">select</text>
+    <rect x="180" y="-12" width="28" height="18" rx="4" fill="#ffffff" stroke="#e5e5e7"/>
+    <text x="194" y="2" text-anchor="middle" class="kbd">esc</text>
+    <text x="214" y="2" class="footer-text">close</text>
+    <!-- 5 results hint -->
+    <text x="640" y="2" text-anchor="end" class="footer-text">5 results</text>
+  </g>
+</svg>

@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <style>
+      .bg        { fill: #f5f5f7; }
+      .window    { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .titlebar  { fill: #fbfbfd; }
+      .topbar    { fill: #ffffff; }
+      .divider   { stroke: #e5e5e7; stroke-width: 1; fill: none; }
+      .subtle-div { stroke: #ececee; stroke-width: 1; fill: none; }
+      .card      { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .chip      { fill: #f2f2f4; }
+      .chip-active { fill: #0071e3; }
+      .accent    { fill: #0071e3; }
+      .accent-text { fill: #0071e3; }
+      .text-primary   { fill: #1d1d1f; }
+      .text-secondary { fill: #6e6e73; }
+      .text-tertiary  { fill: #86868b; }
+      .text-white    { fill: #ffffff; }
+      .strike    { text-decoration: line-through; fill: #a1a1a6; }
+      .shadow     { fill: #000000; fill-opacity: 0.04; }
+      .icon-btn   { fill: #ffffff; stroke: #e5e5e7; stroke-width: 1; }
+      .dot-done   { fill: #34c759; }
+      .dot-dropped { fill: #a1a1a6; }
+      .dot-deferred { fill: #ff9500; }
+      text { font-size: 13px; }
+      .tab-label { font-size: 14px; font-weight: 500; }
+      .brand  { font-size: 15px; font-weight: 600; letter-spacing: 0.2px; }
+      .titlebar-text { font-size: 13px; font-weight: 500; }
+      .page-title { font-size: 24px; font-weight: 600; }
+      .page-sub { font-size: 13px; }
+      .date-head { font-size: 14px; font-weight: 600; letter-spacing: 0.2px; }
+      .filter-chip { font-size: 12px; font-weight: 500; }
+      .row-title { font-size: 14px; }
+      .meta { font-size: 11px; }
+      .chip-text { font-size: 11px; font-weight: 500; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1440" height="900"/>
+  <rect class="shadow" x="16" y="24" width="1408" height="860" rx="14"/>
+  <rect class="window" x="16" y="20" width="1408" height="860" rx="14"/>
+
+  <!-- OS Titlebar -->
+  <rect class="titlebar" x="16" y="20" width="1408" height="44" rx="14"/>
+  <rect class="titlebar" x="16" y="48" width="1408" height="16"/>
+  <line class="divider" x1="16" y1="64" x2="1424" y2="64"/>
+  <circle cx="36" cy="42" r="6" fill="#ff5f57"/>
+  <circle cx="56" cy="42" r="6" fill="#febc2e"/>
+  <circle cx="76" cy="42" r="6" fill="#28c840"/>
+  <text x="720" y="46" text-anchor="middle" class="text-secondary titlebar-text">(3) tempo</text>
+
+  <!-- Top nav: History tab active -->
+  <rect class="topbar" x="17" y="65" width="1406" height="56"/>
+  <line class="divider" x1="16" y1="120" x2="1424" y2="120"/>
+
+  <g transform="translate(48, 80)">
+    <rect x="0" y="0" width="28" height="28" rx="7" fill="#0071e3"/>
+    <path d="M10 8 L20 6 L20 17 A3 3 0 1 1 17 15 L17 9.5 L12.5 10.5 L12.5 19 A3 3 0 1 1 9.5 17 Z" fill="#ffffff"/>
+    <text x="40" y="19" class="text-primary brand">tempo</text>
+  </g>
+
+  <g transform="translate(180, 92)">
+    <g>
+      <text x="0" y="0" class="text-secondary tab-label">Dashboard</text>
+    </g>
+    <g transform="translate(104, 0)">
+      <text x="0" y="0" class="accent-text tab-label">History</text>
+      <rect x="-2" y="12" width="58" height="2" rx="1" class="accent"/>
+    </g>
+  </g>
+
+  <g transform="translate(1144, 78)">
+    <rect x="0" y="0" width="180" height="32" rx="8" fill="#f5f5f7" stroke="#ececee" stroke-width="1"/>
+    <g transform="translate(12, 10)" stroke="#86868b" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="6" cy="6" r="4.5"/>
+      <line x1="9.5" y1="9.5" x2="12.5" y2="12.5"/>
+    </g>
+    <text x="34" y="21" class="text-tertiary" style="font-size: 12px;">Search everything</text>
+    <rect x="138" y="6" width="34" height="20" rx="5" fill="#ffffff" stroke="#e5e5e7" stroke-width="1"/>
+    <text x="155" y="20" text-anchor="middle" class="text-secondary" style="font-size: 11px; font-weight: 500;">⌘K</text>
+  </g>
+
+  <g transform="translate(1344, 76)">
+    <rect class="icon-btn" x="0" y="0" width="36" height="36" rx="10"/>
+    <g transform="translate(9, 9)" stroke="#6e6e73" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="9" r="2.8"/>
+      <path d="M9 0.8 L9 3.4 M9 14.6 L9 17.2 M0.8 9 L3.4 9 M14.6 9 L17.2 9 M3.1 3.1 L5 5 M13 13 L14.9 14.9 M3.1 14.9 L5 13 M13 5 L14.9 3.1"/>
+    </g>
+  </g>
+
+  <!-- Page header -->
+  <g transform="translate(48, 156)">
+    <text x="0" y="20" class="text-primary page-title">History</text>
+    <text x="0" y="46" class="text-secondary page-sub">Completed, dropped, and deferred items · searchable via ⌘K</text>
+  </g>
+
+  <!-- Filter bar -->
+  <g transform="translate(48, 226)">
+    <!-- All (active) -->
+    <g>
+      <rect class="chip-active" x="0" y="0" width="48" height="28" rx="14"/>
+      <text x="24" y="18" text-anchor="middle" class="text-white filter-chip">All</text>
+    </g>
+    <!-- Daily -->
+    <g transform="translate(56, 0)">
+      <rect class="chip" x="0" y="0" width="62" height="28" rx="14"/>
+      <text x="31" y="18" text-anchor="middle" class="text-secondary filter-chip">Daily</text>
+    </g>
+    <!-- Working -->
+    <g transform="translate(126, 0)">
+      <rect class="chip" x="0" y="0" width="80" height="28" rx="14"/>
+      <text x="40" y="18" text-anchor="middle" class="text-secondary filter-chip">Working</text>
+    </g>
+    <!-- Dropped -->
+    <g transform="translate(214, 0)">
+      <rect class="chip" x="0" y="0" width="82" height="28" rx="14"/>
+      <text x="41" y="18" text-anchor="middle" class="text-secondary filter-chip">Dropped</text>
+    </g>
+    <!-- Deferred -->
+    <g transform="translate(304, 0)">
+      <rect class="chip" x="0" y="0" width="82" height="28" rx="14"/>
+      <text x="41" y="18" text-anchor="middle" class="text-secondary filter-chip">Deferred</text>
+    </g>
+
+    <!-- Date range picker (right) -->
+    <g transform="translate(1080, 0)">
+      <rect x="0" y="0" width="264" height="28" rx="8" fill="#ffffff" stroke="#e5e5e7" stroke-width="1"/>
+      <g transform="translate(12, 8)" stroke="#6e6e73" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="0" y="1" width="12" height="11" rx="1.5"/>
+        <line x1="0" y1="4" x2="12" y2="4"/>
+        <line x1="3" y1="0" x2="3" y2="3"/>
+        <line x1="9" y1="0" x2="9" y2="3"/>
+      </g>
+      <text x="34" y="19" class="text-primary" style="font-size: 12px; font-weight: 500;">Last 30 days</text>
+      <text x="154" y="19" class="text-tertiary" style="font-size: 11px;">(23 Mar – 22 Apr)</text>
+      <g transform="translate(244, 11)" stroke="#86868b" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0 0 L5 5 L10 0"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Main card -->
+  <g transform="translate(48, 282)">
+    <rect class="card" x="0" y="0" width="1344" height="580" rx="12"/>
+
+    <!-- TODAY group -->
+    <g transform="translate(28, 28)">
+      <text x="0" y="0" class="text-primary date-head">Today — Tuesday 22 April</text>
+      <text x="1288" y="0" text-anchor="end" class="text-tertiary" style="font-size: 12px;">3 items</text>
+    </g>
+
+    <g transform="translate(28, 48)">
+      <!-- Row: completed daily -->
+      <g>
+        <circle class="dot-done" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-primary row-title">Morning standup prep</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">09:14</text>
+      </g>
+      <line class="subtle-div" x1="0" y1="44" x2="1288" y2="44"/>
+
+      <g transform="translate(0, 48)">
+        <circle class="dot-done" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-primary row-title">Check work email</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">09:22</text>
+      </g>
+      <line class="subtle-div" x1="0" y1="92" x2="1288" y2="92"/>
+
+      <g transform="translate(0, 96)">
+        <circle class="dot-done" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-primary row-title">Review PRs from yesterday</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">10:41</text>
+      </g>
+    </g>
+
+    <line class="divider" x1="28" y1="200" x2="1316" y2="200"/>
+
+    <!-- YESTERDAY group -->
+    <g transform="translate(28, 220)">
+      <text x="0" y="0" class="text-primary date-head">Yesterday — Monday 21 April</text>
+      <text x="1288" y="0" text-anchor="end" class="text-tertiary" style="font-size: 12px;">5 items</text>
+    </g>
+
+    <g transform="translate(28, 240)">
+      <g>
+        <circle class="dot-done" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-primary row-title">Finish v1.4 review pass on kit-db</text>
+        <g transform="translate(320, 13)">
+          <rect fill="#eef6ed" x="0" y="0" width="60" height="18" rx="9"/>
+          <text x="30" y="13" text-anchor="middle" style="font-size: 11px; font-weight: 500; fill: #2d7a3e;">Working</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">17:03</text>
+      </g>
+      <line class="subtle-div" x1="0" y1="44" x2="1288" y2="44"/>
+
+      <g transform="translate(0, 48)">
+        <circle class="dot-done" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-primary row-title">Morning standup prep</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">09:18</text>
+      </g>
+      <line class="subtle-div" x1="0" y1="92" x2="1288" y2="92"/>
+
+      <g transform="translate(0, 96)">
+        <circle class="dot-deferred" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-secondary row-title">Team retro prep</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <g transform="translate(370, 13)">
+          <rect fill="#fff5e5" x="0" y="0" width="74" height="18" rx="9"/>
+          <text x="37" y="13" text-anchor="middle" style="font-size: 11px; font-weight: 500; fill: #b26900;">Deferred 1d</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">17:45</text>
+      </g>
+      <line class="subtle-div" x1="0" y1="140" x2="1288" y2="140"/>
+
+      <g transform="translate(0, 144)">
+        <circle class="dot-dropped" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="strike row-title">Water the plants at home</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <g transform="translate(370, 13)">
+          <rect fill="#f2f2f4" x="0" y="0" width="54" height="18" rx="9"/>
+          <text x="27" y="13" text-anchor="middle" style="font-size: 11px; font-weight: 500; fill: #6e6e73;">Dropped</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">18:02</text>
+      </g>
+      <line class="subtle-div" x1="0" y1="188" x2="1288" y2="188"/>
+
+      <g transform="translate(0, 192)">
+        <circle class="dot-done" cx="6" cy="20" r="4"/>
+        <text x="22" y="24" class="text-primary row-title">Check work email</text>
+        <g transform="translate(320, 13)">
+          <rect class="chip" x="0" y="0" width="44" height="18" rx="9"/>
+          <text x="22" y="13" text-anchor="middle" class="text-secondary chip-text">Daily</text>
+        </g>
+        <text x="1288" y="24" text-anchor="end" class="text-tertiary" style="font-size: 12px;">09:31</text>
+      </g>
+    </g>
+
+    <line class="divider" x1="28" y1="488" x2="1316" y2="488"/>
+
+    <!-- earlier collapsed -->
+    <g transform="translate(28, 510)">
+      <g transform="translate(2, 6)" stroke="#86868b" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0 0 L5 5 L10 0"/>
+      </g>
+      <text x="20" y="10" class="text-secondary date-head" style="font-weight: 500;">Earlier this week</text>
+      <text x="1288" y="10" text-anchor="end" class="text-tertiary" style="font-size: 12px;">18 items · click to expand</text>
+    </g>
+  </g>
+
+  <!-- legend footer -->
+  <g transform="translate(48, 876)">
+    <circle class="dot-done" cx="6" cy="-4" r="4"/>
+    <text x="18" y="0" class="text-tertiary" style="font-size: 11px;">Completed</text>
+    <circle class="dot-deferred" cx="106" cy="-4" r="4"/>
+    <text x="118" y="0" class="text-tertiary" style="font-size: 11px;">Deferred</text>
+    <circle class="dot-dropped" cx="196" cy="-4" r="4"/>
+    <text x="208" y="0" class="text-tertiary" style="font-size: 11px;">Dropped</text>
+  </g>
+</svg>

@@ -67,13 +67,22 @@ See `planning/BACKLOG.md` (created on first deferred idea).
 Carried forward from the shelved plan so they survive future sessions:
 
 - **Daily task schedule:** every-day OR weekdays-only toggle. No custom weekday picker in v1.
-- **EOD review modal:** single configurable hour in Settings; fires on app open/refresh after that hour.
+- **End-of-day triage:** no modal. Row-level `⋯` menu on daily tasks with Complete / Roll-over / Defer (fixed 1 day) / Drop. Spillover + age label + window-title counter handle ambient nudging.
 - **Window-title counter:** `tempo` when empty, `(N) tempo` when pending.
 - **Notes ↔ tasks:** a note belongs to at most one task; a task can have many notes.
 - **Two lists, two tables:** `task_templates` + `task_instances` (daily) and `work_items` (working). No single `kind` column.
+- **Working completion:** strike-through, collapsed "Recently completed" section at bottom of Working column (last 7 days), older → History view.
 - **History:** kept forever (UI filter for decluttering).
 - **Icons:** stubs in v1, real branding later.
 - **Delivery:** PWA (Level 1). No native Swift wrapper. Revisit only if something concrete is missing after a month of daily use.
+- **Launcher:** dropped from v1. `bun run dev` / `bun start` for now.
+- **Dashboard layout:** one screen, Daily + Working top-row (2 columns), Notes strip below.
+- **First-run:** inline empty-state prompts per column.
+- **Note editor:** markdown (`marked`, ~20KB). Click a note → inline replacement in the Notes strip.
+- **Adding items:** inline adder at top of each column + "Create: …" option in ⌘K palette. No create-modal.
+- **Working completion:** strike-through for 7 days in a "Recently completed" collapsed section, then History-only.
+- **Search:** global ⌘K palette across notes + tasks + history. No per-column filter bars.
+- **Time estimates:** display-only chips on rows. No sum, no filter in v1.
 
 ## 🐛 Lessons Learned
 
